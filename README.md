@@ -10,7 +10,7 @@ Adjustable rate mortgages (ARMs) is a mortgage with adjustable mortgage rate. Th
 
 4.	Market prices of the instruments that are used to evaluate Option Adjusted Spread (OAS) that in turn affects the evaluation of the interest rate risk measures of the instruments.
 
-5.	Initial yield curve used to calibrate the term structure of the BDT model. The methodology to do this is straightforward and is therefore not a concern.
+5.	Initial yield curve, https://finpricing.com/lib/FiZeroBond.html, used to calibrate the term structure of the BDT model. The methodology to do this is straightforward and is therefore not a concern.
 
 
 The prepayment model used for these instruments is a four-factor model. While the parameters and factors used were supplied to us, it is difficult to assess the accuracy of the parameters since it is a based on extensive statistical analysis of historical data by the vendor. However, the model seemed reasonable and well motivated.
@@ -39,13 +39,5 @@ In order to calculate the interest rate risk of the instruments, several interes
 
 To calculate the market value changes under these various scenarios, the interest rate paths are regenerated using BDT and the cash flows are also recalculated. The market value under the new scenario is then calculated using the above formula using the new short rates, cash flows (recalculated to include shocks), and including the OAS calculated previously in the evaluation of the discount factors. 
 
-
-Reference:
-
-https://finpricing.com/lib/EqCliquet.html
-
-https://zenodo.org/record/6539925/files/zenodo-ARM-analytics.pdf
-
-https://zenodo.org/record/6539925#.YpDurqgpDq4
 
 
